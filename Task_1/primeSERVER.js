@@ -9,7 +9,7 @@ app.use(express.json()); //-> For raw data in postman
 app.use(express.urlencoded({ extended: false }));//-> for form in postman
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://internDB:11223344@clusterass.sceae.mongodb.net/Node-API?retryWrites=true&w=majority&appName=clusterASS')
+mongoose.connect('mongoDB URL')
   .then(() => {
     app.listen(3000, () => {
       console.log('APP RUNNING ON PORT 3000 > > > >');
